@@ -1,2 +1,2 @@
 # DNATree
-This is a 5-way branching tree structure utilizing flyweights, used to store and query DNA sequences (some combination of: 'A' 'C' 'G' 'T'). 
+This is a 5-way branching tree structure utilizing flyweights, used to store and query DNA sequences (some combination of the letters: 'A' 'C' 'G' 'T'). All sequences are stored in the leaves and the tree holds no duplicates. Internal nodes contain only references to their 5 children: A, C, G, T, and D, and The empty leaves all point to a single flyweight, that holds no data. Input is a text file with a single command per line, formatted as a command followed by one sequence, if neccessary.
